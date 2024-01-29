@@ -27,11 +27,12 @@ public class Player : MonoBehaviour
         {
             return;
         }
-
+        
+        Vector2 moveDir = _playerController.MoveAmount.normalized;
         _playerRigidbody.velocity = new Vector3(
-            _playerController.MoveAmount.x * _moveSpeed * Time.fixedDeltaTime,
+            moveDir.x * _moveSpeed * Time.fixedDeltaTime,
             0,
-            _playerController.MoveAmount.y * _moveSpeed * Time.fixedDeltaTime
+            moveDir.y * _moveSpeed * Time.fixedDeltaTime
         );
     }
 
