@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CodeGym1.sln"
+    "dotnet.defaultSolution": "UnityGU2311R1_Lesson1.sln"
 }
