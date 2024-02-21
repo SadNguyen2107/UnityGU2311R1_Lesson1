@@ -16,7 +16,7 @@ public class CameraFollow : MonoBehaviour
 
     void Awake()
     {
-        player = FindObjectOfType<Player>().GetComponent<Transform>();
+        player = FindObjectOfType<PlayerMovement>().GetComponent<Transform>();
     }
     private void LateUpdate()
     {
